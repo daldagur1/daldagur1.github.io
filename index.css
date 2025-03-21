@@ -3,6 +3,7 @@
 	margin: 0 auto;
 }
 
+
 .intro {
     text-align: center;
     width: 100%;
@@ -14,8 +15,10 @@
 body {
     background: #f0f0f0;
     color: #333;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
+    font-style: normal;
 }
 
 h5{
