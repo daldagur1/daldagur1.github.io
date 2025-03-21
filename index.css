@@ -1,0 +1,188 @@
+.container{
+    max-width: 850px;
+	margin: 0 auto;
+}
+
+.intro {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    /* color: #212529; #fff; */
+    /* background-image: url(/images/back.jpeg) */
+}
+
+body {
+    background: #f0f0f0;
+    color: #333;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+
+h5{
+    color:#787878;
+}
+
+p{
+    color:#6c757d;
+}
+
+.contact{
+    text-align: center;
+}
+
+.map_form{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+@media (max-width: 900px) {
+    .map_form{
+        grid-template-columns: 100%; /* 모바일 화면(480px), 900px이하 에서는 하나의 열로 */
+    }
+}
+
+
+form input, textarea {
+	padding: 5px;
+	border-radius: 10px;
+	width: 200px;
+}
+
+form {
+	width: 200px;
+	margin: 0 auto;
+}
+
+form input[type="submit"] {
+	width: 200px;
+}
+
+.submit-button-wrapper {
+	margin: 20px 0;
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.map{
+    text-align: center;
+}
+
+
+.profile-picture {
+    width: 150px;
+    }
+
+
+.projects-heading{
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.project-image {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
+    transition: all ease-in-out .2s;
+}
+.project-image:hover {
+    filter: brightness(.75);
+    box-shadow: 0 8px 12px 0 rgba(34, 60, 80, .16);
+}
+.project-image-wrapper {
+    justify-self: center;
+    padding: 4%;
+    position: relative;
+}
+.project-image-wrapper:hover > h5, p {
+    visibility: visible;
+}
+.project-image-wrapper > h5,p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,
+    -50%);
+    color: white;
+    visibility: hidden;
+    z-index: 2;
+    transition: all ease-in-out .2s;
+}
+
+.ido{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+@media (max-width: 900px) {
+    .ido{
+        grid-template-columns: 100%; /* 모바일 화면(480px), 900px이하 에서는 하나의 열로 */
+    }
+}
+.ido h2{
+    text-align: center;
+}
+
+.edu_exp{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+@media (max-width: 900px) {
+    .edu_exp{
+        grid-template-columns: 100%; /* 모바일 화면(480px), 900px이하 에서는 하나의 열로 */
+    }
+}
+
+.edu_exp h2{
+    text-align: center;
+}
+
+.simple_folio{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+@media (max-width: 900px) {
+    .simple_folio{
+        grid-template-columns: 100%; /* 모바일 화면(480px), 900px이하 에서는 하나의 열로 */
+    }
+}
+
+.profile_img {
+    display: flex;
+    justify-content: center; /* 이미지를 가운데 정렬 */
+    align-items: center;
+    
+}
+
+.profile_pic {
+    width: 300px; /* 원하는 이미지 크기로 설정 */
+    border-radius: 50%; /* 원형으로 만들기*/
+    /* box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .75); */
+    transition: all ease-in-out .2s;
+/*    object-fit: cover;  이미지가 비율을 맞추며 잘리도록 설정 */
+  /*  border: 2px solid #ccc; /* 경계선 추가 (선택 사항) */
+}
+
+.folio {
+    padding: 10px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.social .icon {
+    margin-right: 10px; /* 아이콘과 정보 사이 간격 */
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
