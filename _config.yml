@@ -1,0 +1,51 @@
+title: daldaguri
+description: Web security posts and CV.
+url: "https://daldagur1.github.io"
+baseurl: ""
+lang: ko-KR
+timezone: Asia/Seoul
+
+author:
+  name: daldaguri
+  handle: "@daldaguri"
+  bio: Web security posts and CV.
+  github: daldagur1
+
+permalink: /posts/:title/
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+collections:
+  pages:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: daldaguri
+      image: /assets/images/writeup-cover.svg
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

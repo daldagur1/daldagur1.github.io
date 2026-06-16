@@ -1,0 +1,15 @@
+---
+layout: default
+title: Posts
+permalink: /posts/
+---
+<section class="page-hero compact">
+  <p class="eyebrow">Archive</p>
+  <h1>Posts</h1>
+</section>
+
+<section class="post-list">
+  {% for post in site.posts %}
+    {% include post-card.html post=post %}
+  {% endfor %}
+</section>

@@ -1,0 +1,12 @@
+<header class="site-header">
+  <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
+    <span class="brand-mark">
+      <img src="{{ '/assets/images/yoshi.jpeg' | relative_url }}" alt="">
+    </span>
+    <span class="brand-text">{{ site.title }}</span>
+  </a>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href="{{ '/posts/' | relative_url }}" {% if page.url contains '/posts/' %}aria-current="page"{% endif %}>Posts</a>
+    <a href="{{ '/cv/' | relative_url }}" {% if page.url contains '/cv/' %}aria-current="page"{% endif %}>CV</a>
+  </nav>
+</header>

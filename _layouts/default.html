@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'ko-KR' }}">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <div class="page-shell">
+      {% include site-header.html %}
+      <main>
+        {{ content }}
+      </main>
+      {% include site-footer.html %}
+    </div>
+    <dialog class="image-dialog" data-image-dialog>
+      <button class="dialog-close" type="button" data-dialog-close aria-label="Close image">×</button>
+      <img alt="">
+    </dialog>
+    <script src="{{ '/assets/js/site.js' | relative_url }}"></script>
+  </body>
+</html>

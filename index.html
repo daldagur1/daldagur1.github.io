@@ -1,179 +1,54 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title> Jinhee Park </title>
-        <link type="text/css" rel="stylesheet" href="index.css">
-        <!-- Font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet"> 
-        <!-- Font Awesome CDN for icon -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
-    <body>
-        <div class="container">
-        <!-- intro section -->
-        <div class="intro">
-            <h5>Welcome</h5>
-            <!-- <h1>Jinhee Park</h1>
-            <div class="badge">
-                <p>interested in Web Security</p>
-            </div> -->
-        </div>
-       
-        <!-- page about -->
-        <div>
+---
+layout: default
+title: Home
+---
+<section class="home-hero">
+  <div class="home-hero-copy">
+    <p class="eyebrow">web security / writeups</p>
+    <h1>daldaguri</h1>
+    <div class="hero-status" aria-label="Research focus">
+      <span>Web Security</span>
+      <span>Red Teaming</span>
+      <span>CTF</span>
+      <span>Problem solver</span>
+    </div>
+    <div class="hero-actions">
+      <a class="button primary" href="{{ '/posts/' | relative_url }}">Read posts</a>
+      <a class="button ghost" href="{{ '/cv/' | relative_url }}">View CV</a>
+    </div>
+  </div>
+  <div class="terminal-panel research-panel" aria-label="Research index preview">
+    <div class="terminal-top">
+      <span></span><span></span><span></span>
+      <strong>research.log</strong>
+    </div>
+    <div class="research-list">
+      <a href="{{ '/posts/' | relative_url }}">
+        <span>01</span>
+        <strong>1-day analysis</strong>
+        <em>patch notes, exploit path, mitigation</em>
+      </a>
+      <a href="{{ '/posts/' | relative_url }}">
+        <span>02</span>
+        <strong>CTF writeups</strong>
+        <em>web, pwn, reversing, misc</em>
+      </a>
+      <a href="{{ '/cv/' | relative_url }}">
+        <span>03</span>
+        <strong>CV</strong>
+        <em>experience, awards, activity</em>
+      </a>
+    </div>
+  </div>
+</section>
 
-            <!-- simple_folio -->
-            <div class="simple_folio">
-                <!-- profile 이미지 -->
-                <div class="profile_img">
-                    <img class="profile_pic" src="/images/yoshi0.jpeg" alt>
-                </div>
+<section class="section-heading">
+  <p class="eyebrow">Latest</p>
+  <h2>최근 글</h2>
+</section>
 
-                <!-- 간단 자기소개 -->
-                <div class="folio">
-                    <h1>Jinhee Park</h1>
-                    <h4>interested in Web Security</h4>
-                    <br>
-                    
-                    <!-- email info -->
-                    <div class="social">
-                        <span class="icon"><i class="fas fa-envelope"></i></span>
-                        <span class="info">jh34p0@gmail.com</span>
-                    </div>
-                    <!-- git info -->
-                    <div class="social">
-                        <span class="icon"><i class="fab fa-github"></i></span>
-                        <span class="info"><a href="https://github.com/daldagur1">daldagur1</a></span>
-                    </div>
-                    <!-- twiter info -->
-                    <div class="social">
-                        <span class="icon"><i class="fab fa-twitter"></i></span>
-                        <span class="info"><a href="https://x.com/daldaguri__j">@daldaguri__j</a></span>
-                    </div>
-                </div>
-
-            </div>
-
-            <hr/>
-
-            <!-- edu_exp -->
-            <div class="edu_exp">
-                <div class="edu">
-                    <h2>Education</h2>
-                    <ul type="circle">
-                        <li>
-                            <span>
-                                <b>Sejong Univ</b> | Department of Computer Science
-                            <span>
-                            <h5>March, 2022 - </h5>
-                        </li>
-                    </ul>
-                </div>
-                <div class="exp">
-                    <h2>Experience</h2>
-                    <ul type="circle">
-                        <li>
-                            <span><b>SSG</b> | pwnable Track</span>
-                            <h5>2022 - 2023</h5>
-                        </li>
-                        <li>
-                            <span><b>KITRI Best Of the Best 12th</b> | Vulnerability Analysis Track</span>
-                            <h5>2023</h5>
-                        </li>
-                        <li>
-                            <span><b>RaonSecure</b> | CoreResearch Team</span>
-                            <h5>February, 2024 - February, 2025</h5>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <hr/>
-
-            <!-- ido -->
-            <div class="ido">
-                <div class="skills">
-                    <h2>Skills</h2>
-                    <ul type="circle">
-                        <li>Burp Suite</li>
-                        <li>Reverse Engineering tools(IDA)</li>
-                        <li>Python, C/C++, PHP</li>
-                        <li>MySQL</li>
-                        <li>SQLite3</li>
-                        <li>apache2</li>
-                        <li>nginx</li>
-                        <li>etc</li>
-                    </ul>
-                </div>
-                <div class="intersts">
-                    <h2>Interests</h2>
-                    <ul type="circle">
-                        <li>Web Hacking</li>
-                        <li>Red teaming</li>
-                        <li>Pentesting</li>
-                        <li>Development</li>
-                        <li>Reversing</li>
-                        <li>System Hacking</li>
-                        <li>etc</li>
-                    </ul>
-                </div>
-            </div>
-            <hr/>
-
-            <!-- projects -->
-            <div class="projects-heading">
-                <h2>Projects</h2>
-                <div class="projects-grid">
-                <div class="project-image-wrapper">
-                    <img class="project-image" src="/images/yoshi1.jpeg" alt>
-                    <h5>Linux Heap Exploitation Techniques Study</h5>
-                </div>
-                <div class="project-image-wrapper">
-                    <img class="project-image" src="/images/yoshi2.jpeg" alt>
-                    <h5>Development of Web Application Fuzzer(Team.WTF)</h5>
-                </div>
-                <div class="project-image-wrapper">
-                    <img class="project-image" src="/images/yoshi2.jpeg" alt>
-                    <h5>Android Vulnerability Analysis</h5>
-                </div>
-                <div class="project-image-wrapper">
-                    <img class="project-image" src="/images/yoshi1.jpeg" alt>
-                    <h5>Red Teaming</h5>
-                </div>
-                </div>
-            </div>
-
-            <hr/>
-
-            <!-- map_form -->
-            <div class="contact">
-                <h2>Contact</h2>
-            
-                <div class="map_form">
-                    <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.4745082452177!2d135.42774767642146!3d34.667971784967015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e9c501ece2cf%3A0xab0aaf97d661efa5!2z7IqI7Y28IOuLjO2FkOuPhCDsm5Trk5w!5e0!3m2!1sko!2skr!4v1742551002698!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-
-
-                    <div class="emailform">
-                        <form action="#">
-                            <label for="email">
-                                Email <input type="email" id="email" placeholder="Enter your email" /> 
-                            </label>
-
-                            <label for="message">
-                                Message <textarea id="message">Your Message</textarea>
-                            </label>
-                            <input type="submit" class="submit-button-wrapper " valid="Send Message" value="Send Message" />
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-        </div>
-    </body>
-</html>
+<section class="post-grid">
+  {% for post in site.posts limit: 6 %}
+    {% include post-card.html post=post %}
+  {% endfor %}
+</section>
