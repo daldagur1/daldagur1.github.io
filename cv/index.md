@@ -13,7 +13,6 @@ Offensive Web Security Researcher · Penetration Tester
 ### Contact
 
 - Email: [jh34p0@gmail.com](mailto:jh34p0@gmail.com)
-- Website: [www.posquit0.com](https://www.posquit0.com)
 - GitHub: [daldagur1](https://github.com/daldagur1)
 - LinkedIn: [daldagur1](https://www.linkedin.com/in/daldagur1)
 
