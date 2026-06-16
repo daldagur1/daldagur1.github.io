@@ -17,29 +17,6 @@ title: Home
       <a class="button ghost" href="{{ '/cv/' | relative_url }}">View CV</a>
     </div>
   </div>
-  <div class="terminal-panel research-panel" aria-label="Research index preview">
-    <div class="terminal-top">
-      <span></span><span></span><span></span>
-      <strong>research.log</strong>
-    </div>
-    <div class="research-list">
-      <a href="{{ '/posts/' | relative_url }}">
-        <span>01</span>
-        <strong>1-day analysis</strong>
-        <em>patch notes, exploit path, mitigation</em>
-      </a>
-      <a href="{{ '/posts/' | relative_url }}">
-        <span>02</span>
-        <strong>CTF writeups</strong>
-        <em>web, pwn, reversing, misc</em>
-      </a>
-      <a href="{{ '/cv/' | relative_url }}">
-        <span>03</span>
-        <strong>CV</strong>
-        <em>experience, awards, activity</em>
-      </a>
-    </div>
-  </div>
 </section>
 
 <section class="section-heading">
@@ -48,7 +25,11 @@ title: Home
 </section>
 
 <section class="post-grid">
-  {% for post in site.posts limit: 6 %}
-    {% include post-card.html post=post %}
-  {% endfor %}
+  {% if site.posts.size > 0 %}
+    {% for post in site.posts limit: 6 %}
+      {% include post-card.html post=post %}
+    {% endfor %}
+  {% else %}
+    <p class="empty-state">Posts are being drafted locally.</p>
+  {% endif %}
 </section>
